@@ -1,57 +1,91 @@
-# chonGame
-A JavaFX game for learning the main concepts from the object-oriented approach.
-Teaching Units: <strong>Linguagens e Técnicas de Programação II</strong> e <strong>Introdução a Orientação a Objetos</Strong>.
+<div align="center">
 
-## Como Contribuir Nesse Repositório:
+<img src="game/src/main/resources/images/environment/DRAGON%20BALL%20ADVENTURES.png" alt="Dragon Ball Z: Cell's Revenge" width="900">
 
-- **Requisitos**: você precisa ser aluno ou monitor da disciplina ou, ainda, trabalhar em algum projeto de pesquisa.
-- **Criar uma Branch**: após clonar o projeto em alguma IDE, é preciso criar uma branch baseada em algumas das categorias abaixo, de acordo com a funcionalidade desenvolvida.
+# Dragon Ball Z: Cell's Revenge
 
-| Category        | Meaning                                                                     |
-| --------------- | --------------------------------------------------------------------------- |
-| `wip`           | for a work in progress                                                      |
-| `feature`       | for adding, removing or modifying a feature                                 |
-| `experimental`  | for experimenting something which is not an issue                           |
-| `hotfix`        | for quickly fixing critical issues, usually with a temporary solution Cell  |
-| `bugfix`        | for fixing a bug                                                            |
+Um jogo 2D desenvolvido em JavaFX no qual Gohan enfrenta os Cell Juniors e as diferentes formas de Cell.
 
-> Exemplo de criação de uma branch para resolução de uma lista de exercícios:
-  ```
-  git checkout -b wip-primeiro-último-nome-projeto
-  git checkout -b feature-primeiro-último_nome-feature-em-desenvolvimento
-  ```
+![Java](https://img.shields.io/badge/Java-11-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![JavaFX](https://img.shields.io/badge/JavaFX-16-1B74BB?style=for-the-badge)
+![Maven](https://img.shields.io/badge/Maven-3.8%2B-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)
+![Status](https://img.shields.io/badge/status-em%20desenvolvimento-f59e0b?style=for-the-badge)
 
-- **Adicionar os arquivos**: após a implementação das funcionalidades, adicione os arquivos alterados para prepará-los para confirmação e envio a este repositório.
-> Exemplo de adição de todos os arquivos modificados:
-  ```
-  git add .
-  ```
+</div>
 
-- **Realizar o commit localmente**: confirmar as modificações que precisam ser enviadas para serem avaliadas pelo responsável do repositório. Sempre adicione uma mensagem sobre o que foi realizado na confirmação.  
-> Exemplo de um commit com uma mensagem:
-  ```
-  git commit -m "Uploading the new branch for the fixing a bug."
-  ```
+## Sobre o projeto
 
-- **Efetuar o push**: envie suas modificações sempre que quiseres que tuas modificações sejam persistidas on-line no repositório e na branch criada anteriormente.
-> Exemplo de como enviar as modificações confirmadas quando a branch ainda não existir no repositório:
-  ```
-  git push --set-upstream origin wip-exercícios-14-ao-20
-  ```
+Esta é a versão temática de Dragon Ball do **chonGame**, um projeto acadêmico criado para aplicar conceitos de programação orientada a objetos por meio do desenvolvimento de jogos.
 
-> Exemplo de como enviar as modificações confirmadas para o repositório:
-  ```
-  git push
-  ```
+Na pele de Gohan, o jogador deve atravessar três fases, coletar itens, enfrentar inimigos e derrotar Cell antes que ele alcance sua forma perfeita.
 
-- **Solicitar mesclagem**: para que as modificações sejam refletidas no branch principal (`main`), é necessaŕio realizar um `pull request`. Esta solicitação é responsável por informar a outras pessoas sobre as alterações feitas em uma ramificação de um repositório. 
-> Utilize o GitHub para realizar esta etapa.
+## Principais recursos
 
-## Instruções Úteis:
+- Combate em tempo real com ataques de energia.
+- Três fases com câmera lateral e cenários inspirados em Dragon Ball.
+- Cell Juniors e batalha contra as diferentes transformações de Cell.
+- Sistema de vida, energia, pontuação e itens coletáveis.
+- Sprites animados para movimento, ataque, dano, transformação e derrota.
+- Trilha sonora e efeitos sonoros para menus, combate, vitória e game over.
+- Menu inicial, pausa, reinício, tela de vitória e tela de derrota.
 
-- **Criar uma branch a partir de uma outra**: se enventualmente modificações ocorreram em uma branch e é preciso levar essas modificações para uma outra branch.
-> Exemplo de como criar a branch wip-nova-branch a partir da branch atual.
+## Controles
+
+| Tecla | Ação |
+| --- | --- |
+| `↑` `↓` `←` `→` | Movimentar Gohan e navegar pelos menus |
+| `Espaço` | Atacar |
+| `P` | Pausar ou continuar o jogo |
+| `Enter` | Confirmar uma opção do menu |
+
+## Tecnologias
+
+- **Java 11** — linguagem e orientação a objetos.
+- **JavaFX 16** — interface gráfica, canvas, animações e áudio.
+- **Maven** — dependências, compilação e execução do projeto.
+- **Git e GitHub** — versionamento e organização das branches.
+
+## Como executar
+
+### Pré-requisitos
+
+- JDK 11 ou superior.
+- Apache Maven 3.8 ou superior.
+
+### Passo a passo
+
+```bash
+git clone https://github.com/Nilokrtz/chonGame.git
+cd chonGame
+git checkout dragon-ball
+cd game
+mvn clean javafx:run
 ```
-git checkout -b wip-nova-branch
+
+## Estrutura do projeto
+
+```text
+chonGame/
+├── game/
+│   ├── pom.xml
+│   └── src/main/
+│       ├── java/        # Engine, entidades, menus, armas e regras do jogo
+│       └── resources/   # Imagens, sprites, fontes e efeitos sonoros
+├── documentation/       # Documentação e modelagem do projeto
+├── presentation/        # Material de apresentação
+└── README.md
 ```
 
+## Contexto acadêmico
+
+O chonGame foi utilizado nas disciplinas **Linguagens e Técnicas de Programação II** e **Introdução à Orientação a Objetos**. Esta branch apresenta uma adaptação temática desenvolvida para consolidar conceitos como herança, encapsulamento, polimorfismo, composição e separação de responsabilidades.
+
+## Autor desta versão
+
+Desenvolvido e personalizado por [Nilo Silva](https://github.com/Nilokrtz).
+<br>
+Confira nossa Engine em [Kadu Pantoja](https://github.com/profpantoja/chonGame)
+
+## Aviso
+
+Projeto de fã, sem fins comerciais, criado exclusivamente para estudo. Dragon Ball e seus personagens pertencem aos seus respectivos detentores de direitos autorais.

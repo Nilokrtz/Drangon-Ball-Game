@@ -9,7 +9,6 @@ Um jogo 2D desenvolvido em JavaFX no qual Gohan enfrenta os Cell Juniors e as di
 ![Java](https://img.shields.io/badge/Java-11-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![JavaFX](https://img.shields.io/badge/JavaFX-16-1B74BB?style=for-the-badge)
 ![Maven](https://img.shields.io/badge/Maven-3.8%2B-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)
-![Status](https://img.shields.io/badge/status-em%20desenvolvimento-f59e0b?style=for-the-badge)
 
 </div>
 
